@@ -8,6 +8,7 @@ import { DashboardComponent } from './dashboard/dashboard.component';
 import { TeamComponent } from './team/team.component';
 import { EventsComponent } from './events/events.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { BlahBlahBLahComponent } from './blah-blah-blah/blah-blah-blah.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: 'dashboard', pathMatch: 'full' },
@@ -16,6 +17,7 @@ export const routes: Routes = [
   { path: 'team', component: TeamComponent, data: { text: 'Team' } },
   { path: 'events', component: EventsComponent, data: { text: 'Events' } },
   { path: 'employees', component: EmployeesComponent, data: { text: 'Employees' } },
+  { path: 'blah-blah-blah', component: BlahBlahBLahComponent, data: { text: 'BlahBlahBLah' } },
   { path: '**', component: PageNotFoundComponent } // must always be last
 ];
 

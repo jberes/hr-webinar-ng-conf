@@ -1,7 +1,7 @@
 import { Component, OnDestroy, OnInit } from '@angular/core';
 import { Subject, takeUntil } from 'rxjs';
-import { TeamGrowthType } from '../models/dashboard-data/team-growth-type';
 import { TeamMembersGridType } from '../models/dashboard-data/team-members-grid-type';
+import { TeamGrowthType } from '../models/dashboard-data/team-growth-type';
 import { DashboardDataService } from '../services/dashboard-data.service';
 
 @Component({

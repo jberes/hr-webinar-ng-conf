@@ -3,23 +3,24 @@ import { FormsModule } from '@angular/forms';
 import { NoopAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientTestingModule } from '@angular/common/http/testing';
 
+import { IgxCategoryChartModule } from 'igniteui-angular-charts';
 import { IgxGridModule } from '@infragistics/igniteui-angular';
-import { EmployeesComponent } from './employees.component';
+import { BlahBlahBLahComponent } from './blah-blah-blah.component';
 
-describe('EmployeesComponent', () => {
-  let component: EmployeesComponent;
-  let fixture: ComponentFixture<EmployeesComponent>;
+describe('BlahBlahBLahComponent', () => {
+  let component: BlahBlahBLahComponent;
+  let fixture: ComponentFixture<BlahBlahBLahComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      declarations: [ EmployeesComponent ],
-      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxGridModule ]
+      declarations: [ BlahBlahBLahComponent ],
+      imports: [ NoopAnimationsModule, FormsModule, HttpClientTestingModule, IgxCategoryChartModule, IgxGridModule ]
     })
     .compileComponents();
   });
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(EmployeesComponent);
+    fixture = TestBed.createComponent(BlahBlahBLahComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

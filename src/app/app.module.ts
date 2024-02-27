@@ -10,6 +10,7 @@ import { FormsModule } from '@angular/forms';
 import { TeamComponent } from './team/team.component';
 import { EventsComponent } from './events/events.component';
 import { EmployeesComponent } from './employees/employees.component';
+import { BlahBlahBLahComponent } from './blah-blah-blah/blah-blah-blah.component';
 import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
@@ -18,7 +19,8 @@ import { HttpClientModule } from '@angular/common/http';
     DashboardComponent,
     TeamComponent,
     EventsComponent,
-    EmployeesComponent
+    EmployeesComponent,
+    BlahBlahBLahComponent
   ],
   imports: [
     BrowserModule,
