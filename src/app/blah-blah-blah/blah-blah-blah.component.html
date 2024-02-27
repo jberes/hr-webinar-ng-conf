@@ -1,10 +1,9 @@
 <div class="column-layout group">
+  <igx-category-chart [dataSource]="financialBoxOfficeRevenue" computedPlotAreaMarginMode="series" class="category-chart"></igx-category-chart>
+</div>
+<div class="column-layout group">
   <igx-grid [data]="northwindEmployees" primaryKey="employeeID" displayDensity="cosy" [allowFiltering]="true" filterMode="excelStyleFilter" class="grid">
-    <igx-column field="employeeID" dataType="number" header="employeeID" [sortable]="true" [selectable]="false">
-      <ng-template igxCell let-cell="cell">
-        <img [src]="cell.row.data.avatarUrl" class="image" />
-      </ng-template>
-    </igx-column>
+    <igx-column field="employeeID" dataType="number" header="employeeID" [sortable]="true" [selectable]="false"></igx-column>
     <igx-column field="lastName" dataType="string" header="lastName" [sortable]="true" [selectable]="false"></igx-column>
     <igx-column field="firstName" dataType="string" header="firstName" [sortable]="true" [selectable]="false"></igx-column>
     <igx-column field="title" dataType="string" header="title" [sortable]="true" [selectable]="false"></igx-column>
